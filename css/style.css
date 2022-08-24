@@ -1,0 +1,363 @@
+/*
+==============
+basic setup
+==============
+*/
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+	text-decoration: none;
+}
+
+body{
+	font-family: var(--primary-font-400);
+	font-size: var(--size-xl) ;
+	color: var(--primary-color) ;
+	line-height: 1.62 ;
+}
+
+a,
+span,
+label{
+	display: inline-block;
+}
+button{
+	cursor: pointer;
+}
+input,
+textarea,
+input:focus,
+textarea:focus,
+button{
+	outline: 0;
+	border: 0;
+}
+img{
+	max-width: 100%;
+	height: auto;
+
+}
+img,
+button,
+a {
+	transition: all 0.3s ease-in-out;
+}
+
+
+:root {
+	--size-9xl: 60px;
+	--size-8xl: 50px;
+	--size-7xl: 36px;
+	--size-6xl: 30px;
+	--size-5xl: 28px;
+    --size-4xl: 24px;
+    --size-3xl: 22px;
+    --size-2xl: 18px;
+    --size-xl: 16px;
+    --size-lg: 15px;
+    --size-md: 14px;
+    --size-sm: 13px;
+
+}
+
+
+
+/*
+13px
+14px
+15px 
+16px
+22px 
+24px
+28px
+30px
+36px
+50px
+60px
+*/
+/*
+=======fonts color=======
+*/
+--primary-color: #2d343e;
+--secondary-color:  #ffffff;
+--third-color:  #666666;
+--fourth-color: #6b6b6b;
+--five-color:  #ed164f;
+--six-color: #6c6c6c;
+--seven-color: #888888;
+--eight-color: #55555;
+--nine-color: #999999;
+--ten-color: #000000;
+ 
+/* bg color*/
+--primary-bg:  #FFFFFF;
+--secondary-bg: #ed164f;
+--third-bg: #2D343E;
+--fourth-bg: #262C35;
+
+/*fonts-family*/
+--primary-font-700: 'Quicksand 700';
+--primary-font-500: 'Quicksand 500';
+--primary-font-400: 'Quicksand 400';
+
+
+/*fonts-family css*/
+.primary-font-700 {
+	font-family: var(--primary-font-700) ;
+}
+.primary-font-500 {
+		font-family: var(--primary-font-500) ;
+
+}
+.primary-font-400 {
+       	font-family: var(--primary-font-400) ;
+
+}
+
+/*bg color css*/
+
+.primary-bg{
+	background-color: var(--primary-bg);
+}
+.secondary-bg{
+		background-color: var(--secondary-bg);
+
+}
+.third-bg{
+	  	background-color: var(--third-bg);
+
+}
+.fourth-bg{
+		  background-color: var(--fourth-bg);
+
+}
+
+
+/*fonnt color css*/
+.primary-color{
+	font-color: var(--primary-color);
+}
+
+.secondary-color{
+		font-color: var(--secondary-color);
+
+}
+.third-color{
+		font-color: var(--third-color);
+
+}
+.fourth-color{
+		font-color: var(--fourth-color);
+
+}
+.five-color{
+		font-color: var(--five-color);
+
+}
+.six-color{
+		font-color: var(--six-color);
+
+}
+.seven-color{
+		font-color: var(--seven-color);
+
+}
+.eight-color{
+		font-color: var(--eight-color);
+
+}
+.nine-color{
+		font-color: var(--nine-color);
+
+}
+.ten-color{
+		font-color: var(--ten-color);
+
+}
+/*font-size css*/
+
+.size-9xl{
+	font-size: var(--size-9xl);
+	line-height: 1.25;
+}
+.size-8xl{
+		font-size: var(--size-8xl);
+			line-height: 1.92;
+
+
+}
+.size-7xl{
+		font-size: var(--size-7xl);
+			line-height: 1.38;
+
+
+}
+.size-6xl{
+		font-size: var(--size-6xl);
+			line-height: 1.25;
+
+
+}
+.size-5xl{
+		font-size: var(--size-5xl);
+			line-height: 1.42;
+
+
+}
+.size-4xl{
+		font-size: var(--size-4xl);
+			line-height: 1.5;
+
+
+}
+
+
+.size-3xl{
+		font-size: var(--size-3xl);
+			line-height: 1.45;
+
+
+}
+.size-2xl{
+		font-size: var(--size-2xl);
+			line-height: 1.55;
+
+
+}
+.size-xl{
+		font-size: var(--size-xl);
+			line-height: 1.62;
+
+
+}
+.size-lg{
+		font-size: var(--size-lg);
+			line-height: 1.62;
+
+
+}
+.size-md{
+		font-size: var(--size-md);
+			line-height: 1.71;
+
+
+}
+.size-sm{
+		font-size: var(--size-sm);
+			line-height: 1.38;
+
+
+}
+
+
+/*
+======================
+start reusable classes
+*/
+.text-right{
+	text-align: right;
+}
+.text-center{
+	text-align: center;
+}
+.b-radius{
+	border-radius: 20px;
+}
+.w-735{
+	width: 100%;
+	max-width: 735px;
+	margin: auto;
+
+}
+.p-relative{
+	position: relative;
+}
+.d-flex{
+	display: flex;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-between{
+	justify-content: space-between;
+}
+
+.align-center{
+	align-items: center;
+}
+
+/*
+======================
+end reusable classes
+*/
+
+
+
+/*
+======================
+start reusable components
+*/
+.btn{
+	font-family: var(--primary-font-700);
+	font-size: var(--size-xl);
+	line-height: 1.62;
+	text-align: center;
+	height: 40px;
+	line-height: 40px;
+    border-radius: 20px;
+}
+
+
+.btn-border{
+	min-width: 150px;
+	border: 2px solid var(--five-color);
+}
+
+.btn-bg{
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+======================
+ end reusable classes
+*/
+
+
+
+
+
+
+
